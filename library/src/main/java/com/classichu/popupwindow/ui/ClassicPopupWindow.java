@@ -113,6 +113,7 @@ public class ClassicPopupWindow extends PopupWindow {
     }
 
     public void showAsTop_AnchorLeft_Left(View anchor, int yoff) {
+        //
         int contentViewHeight = getContentViewHeight();
         yoff = -(anchor.getHeight() + contentViewHeight) + yoff;
         showAsDropDownCompat(anchor, 0, yoff, Gravity.TOP | Gravity.START);
@@ -128,12 +129,17 @@ public class ClassicPopupWindow extends PopupWindow {
         //
         int screenHeight = ScreenUtil.getScreenHeight();
         if (screenHeight - (y + anchor.getHeight()) < contentViewHeight) {//下面的高度不够显示全部
-            if (y < contentViewHeight) {//但是上面也不够，那还是显示下面
-                return false;
+            if (y < contentViewHeight) {//但是上面也不够
+                if (y > screenHeight - (y + anchor.getHeight())) {//上面的高度大于下面的高度
+                   // this.setHeight(y);//上面不够，所以覆盖高度 ，非常重要！！！否则需要在显示的时候重新计算怎么显示上方
+                    this.setHeight(y - anchor.getHeight());//上面不够，所以覆盖高度 ，非常重要！！！否则需要在显示的时候重新计算怎么显示上方
+                    return true;//显示上面
+                }
+                return false;//显示下面
             }
-            return true;
+            return true;//显示上面
         }
-        return false;
+        return false;//显示下面
     }
 
     private int getContentViewWidth() {

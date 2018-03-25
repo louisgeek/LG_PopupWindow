@@ -188,7 +188,7 @@
             android:text="test_Shadow" />
 
         <TextView
-            android:id="@+id/id_btn_List_View"
+            android:id="@+id/id_btn_List_View111"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -196,6 +196,73 @@
             android:padding="2dp"
             android:text="test_List_View" />
 
+        <TextView
+            android:id="@+id/id_btn_List_View111_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_View_20" />
+
+
+
+        <TextView
+            android:id="@+id/id_btn_List_View"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List" />
+
+
+
+
+        <TextView
+            android:id="@+id/id_btn_List_View_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_10" />
+
+        <TextView
+            android:id="@+id/id_btn_List_View_15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_15" />
+
+        <TextView
+            android:id="@+id/id_btn_List_View_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_20" />
+
+        <TextView
+            android:id="@+id/id_btn_List_View_25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_25" />
+
+        <TextView
+            android:id="@+id/id_btn_List_View_30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_30" />
 
         <TextView
             android:id="@+id/id_btn_List_View_Anim"
@@ -204,7 +271,16 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_View_Anim" />
+            android:text="test_List_Anim" />
+
+        <TextView
+            android:id="@+id/id_btn_List_View_Anim_20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorAccent"
+            android:padding="2dp"
+            android:text="test_List_Anim_20" />
 
 
         <TextView
