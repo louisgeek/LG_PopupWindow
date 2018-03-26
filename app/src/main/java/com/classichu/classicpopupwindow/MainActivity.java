@@ -99,19 +99,19 @@ public class MainActivity extends AppCompatActivity {
         TextView id_btn_List_View_Anim_20 = (TextView) findViewById(R.id.id_btn_List_View_Anim_20);
         TextView id_btn_DisabledOutsideTouchDismiss = (TextView) findViewById(R.id.id_btn_DisabledOutsideTouchDismiss);
 
-        TextView id_btn_android7_x_width_match_parent = (TextView) findViewById(R.id.id_btn_android7_x_width_match_parent);
-        TextView id_btn_android7_x_width_wrap_content = (TextView) findViewById(R.id.id_btn_android7_x_width_wrap_content);
-        TextView id_btn_android7_x_width_size = (TextView) findViewById(R.id.id_btn_android7_x_width_size);
-        TextView id_btn_android7_x_height_match_parent = (TextView) findViewById(R.id.id_btn_android7_x_height_match_parent);
-        TextView id_btn_android7_x_height_wrap_content = (TextView) findViewById(R.id.id_btn_android7_x_height_wrap_content);
-        TextView id_btn_android7_x_height_size = (TextView) findViewById(R.id.id_btn_android7_x_height_size);
+        TextView id_btn_android7_8_width_match_parent = (TextView) findViewById(R.id.id_btn_android7_8_width_match_parent);
+        TextView id_btn_android7_8_width_wrap_content = (TextView) findViewById(R.id.id_btn_android7_8_width_wrap_content);
+        TextView id_btn_android7_8_width_size = (TextView) findViewById(R.id.id_btn_android7_8_width_size);
+        TextView id_btn_android7_8_height_match_parent = (TextView) findViewById(R.id.id_btn_android7_8_height_match_parent);
+        TextView id_btn_android7_8_height_wrap_content = (TextView) findViewById(R.id.id_btn_android7_8_height_wrap_content);
+        TextView id_btn_android7_8_height_size = (TextView) findViewById(R.id.id_btn_android7_8_height_size);
 
 
-        TextView id_btn_android7_x_width_wrap_content_center = (TextView) findViewById(R.id.id_btn_android7_x_width_wrap_content_center);
-        TextView id_btn_android7_x_width_size_center = (TextView) findViewById(R.id.id_btn_android7_x_width_size_center);
-        TextView id_btn_android7_x_height_match_parent_center = (TextView) findViewById(R.id.id_btn_android7_x_height_match_parent_center);
-        TextView id_btn_android7_x_height_wrap_content_center = (TextView) findViewById(R.id.id_btn_android7_x_height_wrap_content_center);
-        TextView id_btn_android7_x_height_size_center = (TextView) findViewById(R.id.id_btn_android7_x_height_size_center);
+        TextView id_btn_android7_8_width_wrap_content_center = (TextView) findViewById(R.id.id_btn_android7_8_width_wrap_content_center);
+        TextView id_btn_android7_8_width_size_center = (TextView) findViewById(R.id.id_btn_android7_8_width_size_center);
+        TextView id_btn_android7_8_height_match_parent_center = (TextView) findViewById(R.id.id_btn_android7_8_height_match_parent_center);
+        TextView id_btn_android7_8_height_wrap_content_center = (TextView) findViewById(R.id.id_btn_android7_8_height_wrap_content_center);
+        TextView id_btn_android7_8_height_size_center = (TextView) findViewById(R.id.id_btn_android7_8_height_size_center);
 
         id_btn_Bottom_AnchorLeft_Left.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -582,7 +582,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_width_match_parent.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_width_match_parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -590,7 +590,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_width_wrap_content.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_width_wrap_content.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -598,7 +598,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_width_size.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_width_size.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -607,7 +607,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        id_btn_android7_x_height_match_parent.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_height_match_parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -615,7 +615,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_height_wrap_content.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_height_wrap_content.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -623,18 +623,18 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_height_size.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_height_size.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
-                builder.setView(R.layout.content).setHeight(80).build().show(v);
+                builder.setView(R.layout.content).setHeight(200).build().show(v);
             }
         });
 
 //////////////////////////
 
 
-        id_btn_android7_x_width_wrap_content_center.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_width_wrap_content_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -642,7 +642,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_width_size_center.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_width_size_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -651,7 +651,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        id_btn_android7_x_height_match_parent_center.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_height_match_parent_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -659,7 +659,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_height_wrap_content_center.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_height_wrap_content_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
@@ -667,11 +667,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        id_btn_android7_x_height_size_center.setOnClickListener(new View.OnClickListener() {
+        id_btn_android7_8_height_size_center.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
-                builder.setView(R.layout.content).setHeight(80).build().showCenter(v);
+                builder.setView(R.layout.content).setHeight(200).build().showCenter(v);
             }
         });
     }

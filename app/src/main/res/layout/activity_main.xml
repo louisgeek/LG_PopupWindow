@@ -294,109 +294,112 @@
 
 
         <TextView
-            android:id="@+id/id_btn_android7_x_width_match_parent"
+            android:id="@+id/id_btn_android7_8_width_match_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_x_width_match_parent" />
+            android:text="test_android7_8_width_match_parent" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_width_wrap_content"
+            android:id="@+id/id_btn_android7_8_width_wrap_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_x_width_wrap_content" />
+            android:text="test_android7_8_width_wrap_content" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_width_size"
+            android:id="@+id/id_btn_android7_8_width_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_x_width_size" />
+            android:text="test_android7_8_width_size" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_height_match_parent"
+            android:id="@+id/id_btn_android7_8_height_match_parent"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_x_height_match_parent" />
+            android:text="test_android7_8_height_match_parent" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_height_wrap_content"
+            android:id="@+id/id_btn_android7_8_height_wrap_content"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_x_height_wrap_content" />
+            android:text="test_android7_8_height_wrap_content" />
 
 
         <TextView
-            android:id="@+id/id_btn_android7_x_height_size"
+            android:id="@+id/id_btn_android7_8_height_size"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_x_height_size" />
+            android:text="test_android7_8_height_size" />
 
 
 
 
         <TextView
-            android:id="@+id/id_btn_android7_x_width_wrap_content_center"
+            android:id="@+id/id_btn_android7_8_width_wrap_content_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_x_width_wrap_content_center" />
+            android:text="test_android7_8_width_wrap_content_center" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_width_size_center"
+            android:id="@+id/id_btn_android7_8_width_size_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_x_width_size_center" />
+            android:text="test_android7_8_width_size_center" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_height_match_parent_center"
+            android:id="@+id/id_btn_android7_8_height_match_parent_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_x_height_match_parent_center" />
+            android:text="test_android7_8_height_match_parent_center" />
 
         <TextView
-            android:id="@+id/id_btn_android7_x_height_wrap_content_center"
+            android:id="@+id/id_btn_android7_8_height_wrap_content_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_x_height_wrap_content_center" />
+            android:text="test_android7_8_height_wrap_content_center" />
 
 
         <TextView
-            android:id="@+id/id_btn_android7_x_height_size_center"
+            android:id="@+id/id_btn_android7_8_height_size_center"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_x_height_size_center" />
+            android:text="test_android7_8_height_size_center" />
 
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="500dp" />
     </LinearLayout>
 </ScrollView>
 
