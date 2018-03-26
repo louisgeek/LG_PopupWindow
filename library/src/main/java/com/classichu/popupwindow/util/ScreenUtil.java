@@ -1,7 +1,11 @@
 package com.classichu.popupwindow.util;
 
+import android.content.Context;
 import android.content.res.Resources;
+import android.graphics.Rect;
+import android.support.v4.app.FragmentActivity;
 import android.util.DisplayMetrics;
+import android.view.Window;
 
 /**
  * Created by louisgeek on 2016/11/16.
@@ -20,7 +24,7 @@ public class ScreenUtil {
     }
 
     /**
-     * 获得屏幕高度
+     * 获得屏幕区域高度  （状态栏 + 标题栏 + 内容 + 导航栏）
      *
      * @return
      */
@@ -29,7 +33,42 @@ public class ScreenUtil {
         return displayMetrics.heightPixels;
     }
 
+    /**
+     * 获得应用程序区域高度 （标题栏 + 内容）
+     * 另外 受 软键盘 影响
+     *
+     * @return
+     */
+    @Deprecated
+    public static int getWindowRectHeight(FragmentActivity fragmentActivity) {
+        Rect outRect = new Rect();
+        fragmentActivity.getWindow().getDecorView().getWindowVisibleDisplayFrame(outRect);
+        return outRect.height();
+    }
 
+    public static int getWindowRectHeight() {
+        return getScreenHeight() - getStatusBarHeight() - getNavigationBarHeight();
+    }
+
+    /**
+     * 获得应用布局区域高度 （内容）
+     *
+     * @return
+     */
+    @Deprecated
+    public static int getDrawingRectHeight(FragmentActivity fragmentActivity) {
+        Rect outRect = new Rect();
+        fragmentActivity.getWindow().findViewById(android.R.id.content).getDrawingRect(outRect);
+//        fragmentActivity.getWindow().findViewById(Window.ID_ANDROID_CONTENT).getDrawingRect(outRect);
+        return outRect.height();
+    }
+
+
+    /**
+     * 获得状态栏高度
+     *
+     * @return
+     */
     public static int getStatusBarHeight() {
         int statusBarHeight = 0;
         int resourceId = Resources.getSystem().getIdentifier("status_bar_height", "dimen", "android");
@@ -39,9 +78,14 @@ public class ScreenUtil {
         return statusBarHeight;
     }
 
+    /**
+     * 获得导航栏高度
+     *
+     * @return
+     */
     public static int getNavigationBarHeight() {
         int navigationBarHeight = 0;
-        int resourceId = Resources.getSystem().getIdentifier("status_bar_height", "dimen", "android");
+        int resourceId = Resources.getSystem().getIdentifier("navigation_bar_height", "dimen", "android");
         if (resourceId > 0) {
             navigationBarHeight = Resources.getSystem().getDimensionPixelSize(resourceId);
         }

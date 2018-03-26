@@ -115,24 +115,24 @@ public class ClassicPopupWindow extends PopupWindow {
     public void showAsTop_AnchorLeft_Left(View anchor, int yoff) {
         //
         int contentViewHeight = getContentViewHeight();
-        yoff = -(anchor.getHeight() + contentViewHeight) + yoff;
+         yoff = -(anchor.getHeight() + contentViewHeight) + yoff;
         showAsDropDownCompat(anchor, 0, yoff, Gravity.TOP | Gravity.START);
     }
 
     private boolean isNeedShowAsTop(View anchor) {
         int[] location = new int[2];
-        anchor.getLocationOnScreen(location);
+        anchor.getLocationOnScreen(location);//从屏幕顶端算起，包括了通知栏的高度
         int x = location[0];
         int y = location[1];
+        int yNew = y - ScreenUtil.getStatusBarHeight();
         //
         int contentViewHeight = getContentViewHeight();
         //
         int screenHeight = ScreenUtil.getScreenHeight();
-        if (screenHeight - (y + anchor.getHeight()) < contentViewHeight) {//下面的高度不够显示全部
-            if (y < contentViewHeight) {//但是上面也不够
-                if (y > screenHeight - (y + anchor.getHeight())) {//上面的高度大于下面的高度
-                   // this.setHeight(y);//上面不够，所以覆盖高度 ，非常重要！！！否则需要在显示的时候重新计算怎么显示上方
-                    this.setHeight(y - anchor.getHeight());//上面不够，所以覆盖高度 ，非常重要！！！否则需要在显示的时候重新计算怎么显示上方
+        if (screenHeight - (yNew + anchor.getHeight()) < contentViewHeight) {//下面的高度不够显示全部
+            if (yNew < contentViewHeight) {//但是上面也不够
+                if (yNew > screenHeight - (yNew + anchor.getHeight())) {//上面的高度大于下面的高度
+                    this.setHeight(yNew);//上面不够，所以覆盖高度 ，非常重要！！！否则需要在显示的时候重新计算怎么显示上方
                     return true;//显示上面
                 }
                 return false;//显示下面
