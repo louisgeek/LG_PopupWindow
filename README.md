@@ -22,12 +22,46 @@ api
 
 ![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/222.png)
 
+常用方法
+```
+show 常规的默认显示，自动处理显示在上面还是下面
+showRight 显示在右边，自动处理显示在上面还是下面
+showCenter 显示在中间，自动处理显示在上面还是下面
+showSameWidth 显示宽度和 Anchor 一致，自动处理显示在上面还是下面
+showAtScreenBottom 显示在屏幕底部
+showAs 开头是具体的显示在哪的 api
+```
+其他说明
+```
+所有方法都调用 showAsDropDownCompat 
+```
+
+
+
 
 builder api
 
 ![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/111.png)
 
-demo：
+常用方法
+```
+setView 可以设置自定义 View
+setOnDismissListener 设置消失监听
+setWidth 设置宽度 可选支持 MATCH_PARENT 、WRAP_CONTENT
+setHeight 设置高度 可选支持 MATCH_PARENT 、WRAP_CONTENT
+setEnableOutsideTouchDismiss 设置点击外部是否可消失
+setAnimationStyle 设置自定义动画
+setWindowBackgroundDarkAlpha 设置显示 View 后灰色蒙版的透明度
+```
+其他方法
+```
+dismiss 隐藏
+getView 获取自定义 View
+```
+
+
+
+举几个例子：
 
 ![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic.png)
 
@@ -142,3 +176,5 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
                 contentView.setBackgroundResource(R.drawable.shape_shadow_bg);
                 builder.setView(contentView).build().show(v);
 ```
+
+其他详见代码。。。
