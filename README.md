@@ -20,7 +20,7 @@ Step 2. Add the dependency  [![](https://jitpack.io/v/louisgeek/ClassicPopupWind
 
 api
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/222.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/222.png)
 
 常用方法
 ```
@@ -41,7 +41,7 @@ showAs 开头是具体的显示在哪的 api
 
 builder api
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/111.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/111.png)
 
 常用方法
 ```
@@ -63,7 +63,7 @@ getView 获取自定义 View
 
 举几个例子：
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic.png)
 
 Top_AnchorCenter_Center
 显示在 anchor 上边，参考线是 anchor 的纵向中线，中间对齐 
@@ -73,7 +73,7 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
                 builder.setView(R.layout.content).build().showAsTop_AnchorCenter_Center(v);
 ```
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic2.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic2.png)
 
 列表
 
@@ -106,7 +106,7 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
 ```
 
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic3.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic3.png)
 
 Bottom_AnchorRight_Right
 显示在 anchor 下边，参考线是 anchor 的右边，右侧对齐 
@@ -118,7 +118,7 @@ Bottom_AnchorRight_Right
 ```
 
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic4.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic4.png)
 
 Top_AnchorRight_Right
 显示在 anchor 上边，参考线是 anchor 的右边，右侧对齐 
@@ -128,7 +128,7 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
                 builder.setView(R.layout.content).build().showAsTop_AnchorRight_Right(v);
 ```
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic5.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic5.png)
 
 Left_AnchorBottom_Bottom
 显示在 anchor 左边，参考线是 anchor 的底边，底部对齐 
@@ -138,7 +138,7 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
 ```
 
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic6.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic6.png)
 
 Right_AnchorCenter_Center
 显示在 anchor 右边，参考线是 anchor 的横向中线，中间对齐 
@@ -148,7 +148,7 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
 ```
 
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic7.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic7.png)
 
 显示在屏幕底部
 
@@ -157,7 +157,7 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
                 builder.setView(R.layout.content).build().showAtScreenBottom(v);
 ```
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic8.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic8.png)
 
 android 7.x  ~ 8.x  match_parent 兼容
 
@@ -166,15 +166,13 @@ ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
                 builder.setView(R.layout.content).setWidth(ViewGroup.LayoutParams.MATCH_PARENT).build().show(v);
 ```
 
-![1](https://github.com/louisgeek/ClassicPopupWindow/blob/master/screenshots/pic9.png)
+![1](https://raw.githubusercontent.com/louisgeek/ClassicPopupWindow/master/screenshots/pic9.png)
 
-阴影
+蒙版
 
 ```java
  ClassicPopupWindow.Builder builder = new ClassicPopupWindow.Builder(mActivity);
-                View contentView = LayoutInflater.from(v.getContext()).inflate(R.layout.content, null);
-                contentView.setBackgroundResource(R.drawable.shape_shadow_bg);
-                builder.setView(contentView).build().show(v);
+                builder.setView(R.layout.content).setWindowBackgroundDarkAlpha(0.5f).build().show(v);
 ```
 
 其他详见代码。。。
