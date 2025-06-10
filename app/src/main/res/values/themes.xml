@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LG_PopupWindow" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LG_PopupWindow" parent="Base.Theme.LG_PopupWindow" />
+
+    <style name="CustomPopupWindowStyle">
+        <item name="android:windowEnterAnimation">@anim/popupwindow_anim_in</item>
+        <item name="android:windowExitAnimation">@anim/popupwindow_anim_out</item>
+    </style>
+
+</resources>
