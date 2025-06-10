@@ -10,7 +10,7 @@
         android:id="@+id/id_tv"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="弹出内容"
+        android:text="弹出的内容"
         android:lines="1"
         android:textColor="@android:color/white" />
 </LinearLayout>

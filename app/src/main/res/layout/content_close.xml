@@ -6,14 +6,13 @@
     android:orientation="vertical"
     android:padding="15dp">
 
-
     <Button
         android:id="@+id/id_btn_close"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_gravity="right"
         android:lines="1"
-        android:text="关" />
+        android:text="关闭" />
 
     <TextView
         android:id="@+id/id_tv"

@@ -5,14 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    tools:context="com.classichu.classicpopupwindow.MainActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical">
-
 
         <TextView
             android:id="@+id/id_btn_Bottom_AnchorLeft_Left"
@@ -158,7 +157,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_purple"
             android:padding="2dp"
-            android:text="test_dark" />
+            android:text="test_dark 0.0 背景全黑" />
 
         <TextView
             android:id="@+id/id_btn_dark2"
@@ -167,7 +166,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_purple"
             android:padding="2dp"
-            android:text="test_dark2" />
+            android:text="test_dark 1.0 背景全亮" />
 
         <TextView
             android:id="@+id/id_btn_dark3"
@@ -176,7 +175,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_purple"
             android:padding="2dp"
-            android:text="test_dark3" />
+            android:text="test_dark 0.5" />
 
         <TextView
             android:id="@+id/id_btn_Shadow"
@@ -194,7 +193,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_View" />
+            android:text="test_ListView" />
 
         <TextView
             android:id="@+id/id_btn_List_View111_20"
@@ -203,8 +202,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_View_20" />
-
+            android:text="test_ListView_20" />
 
 
         <TextView
@@ -214,9 +212,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List" />
-
-
+            android:text="test_RecyclerView" />
 
 
         <TextView
@@ -226,7 +222,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_10" />
+            android:text="test_RecyclerView_10" />
 
         <TextView
             android:id="@+id/id_btn_List_View_15"
@@ -235,7 +231,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_15" />
+            android:text="test_RecyclerView_15" />
 
         <TextView
             android:id="@+id/id_btn_List_View_20"
@@ -244,7 +240,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_20" />
+            android:text="test_RecyclerView_20" />
 
         <TextView
             android:id="@+id/id_btn_List_View_25"
@@ -253,7 +249,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_25" />
+            android:text="test_RecyclerView_25" />
 
         <TextView
             android:id="@+id/id_btn_List_View_30"
@@ -262,7 +258,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_30" />
+            android:text="test_RecyclerView_30" />
 
         <TextView
             android:id="@+id/id_btn_List_View_Anim"
@@ -271,7 +267,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_Anim" />
+            android:text="test_RecyclerView_Anim" />
 
         <TextView
             android:id="@+id/id_btn_List_View_Anim_20"
@@ -280,17 +276,17 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_List_Anim_20" />
+            android:text="test_RecyclerView_Anim_20" />
 
 
         <TextView
-            android:id="@+id/id_btn_DisabledOutsideTouchDismiss"
+            android:id="@+id/id_btn_OutsideTouchDismissDisabled"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_purple"
             android:padding="2dp"
-            android:text="test_DisabledOutsideTouchDismiss" />
+            android:text="test_OutsideTouchDismissDisabled" />
 
 
         <TextView
@@ -300,7 +296,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_8_width_match_parent" />
+            android:text="test_android789_width_match_parent" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_width_wrap_content"
@@ -309,7 +305,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_8_width_wrap_content" />
+            android:text="test_android789_width_wrap_content" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_width_size"
@@ -318,7 +314,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_8_width_size" />
+            android:text="test_android789_width_size" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_height_match_parent"
@@ -327,7 +323,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_8_height_match_parent" />
+            android:text="test_android789_height_match_parent" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_height_wrap_content"
@@ -336,7 +332,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_8_height_wrap_content" />
+            android:text="test_android789_height_wrap_content" />
 
 
         <TextView
@@ -346,9 +342,7 @@
             android:layout_marginTop="10dp"
             android:background="@color/colorAccent"
             android:padding="2dp"
-            android:text="test_android7_8_height_size" />
-
-
+            android:text="test_android789_height_size" />
 
 
         <TextView
@@ -358,7 +352,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_8_width_wrap_content_center" />
+            android:text="test_android789_width_wrap_content_center" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_width_size_center"
@@ -367,7 +361,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_8_width_size_center" />
+            android:text="test_android789_width_size_center" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_height_match_parent_center"
@@ -376,7 +370,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_8_height_match_parent_center" />
+            android:text="test_android789_height_match_parent_center" />
 
         <TextView
             android:id="@+id/id_btn_android7_8_height_wrap_content_center"
@@ -385,7 +379,7 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_8_height_wrap_content_center" />
+            android:text="test_android789_height_wrap_content_center" />
 
 
         <TextView
@@ -395,9 +389,9 @@
             android:layout_marginTop="10dp"
             android:background="@android:color/holo_green_dark"
             android:padding="2dp"
-            android:text="test_android7_8_height_size_center" />
+            android:text="test_android789_height_size_center" />
 
-        <android.support.v4.widget.Space
+        <Space
             android:layout_width="match_parent"
             android:layout_height="500dp" />
     </LinearLayout>
